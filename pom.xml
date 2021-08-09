@@ -22,6 +22,9 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <apache.camel.version>2.23.1</apache.camel.version>
+        <org.mapstruct.version>1.3.0.Final</org.mapstruct.version>
+        <release>${project.version}</release>
     </properties>
 
         <dependencies>
@@ -30,7 +33,7 @@
                 <artifactId>service-sdk-starter-test</artifactId>
                 <scope>test</scope>
             </dependency>
-            
+
            <!-- Add dependencies for your services, e.g. API Specs, integration clients -->
 
            <!-- Uncomment the following dependency if DBS inter-service communication is needed -->
@@ -47,7 +50,7 @@
                         <artifactId>swagger-annotations</artifactId>
                         <version>1.6.0</version>
                     </dependency>
-        
+
                     <dependency>
                         <groupId>org.openapitools</groupId>
                         <artifactId>jackson-databind-nullable</artifactId>
@@ -65,7 +68,53 @@
                         <version>3.0.0</version>
                     </dependency> 
                 <!-- end::openapi-dependency[] -->
-        
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.20</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.apache.camel</groupId>
+                <artifactId>camel-http4</artifactId>
+                <version>${apache.camel.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.camel</groupId>
+                <artifactId>camel-soap</artifactId>
+                <version>${apache.camel.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.camel</groupId>
+                <artifactId>camel-spring-boot-starter</artifactId>
+                <version>${apache.camel.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.xml.bind</groupId>
+                <artifactId>jaxb-api</artifactId>
+                <version>2.3.1</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.xml.ws</groupId>
+                <artifactId>jaxws-api</artifactId>
+                <version>2.3.1</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.jws</groupId>
+                <artifactId>jsr181-api</artifactId>
+                <version>1.0-MR1</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>1.3.0.Final</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-jdk8</artifactId>
+                <version>${org.mapstruct.version}</version>
+            </dependency>
         </dependencies>
 
 

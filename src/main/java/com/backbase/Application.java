@@ -1,4 +1,4 @@
-package com.backbase.message;
+package com.backbase;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.SpringApplication;
