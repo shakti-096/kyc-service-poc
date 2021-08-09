@@ -1,9 +1,9 @@
 package com.backbase.poc.controller;
 
-import com.backbase.dbs.messaging_service.api.service.v2.CustomerKycInfoApi;
-import com.backbase.dbs.messaging_service.api.service.v2.model.CustomerKycInfoGetResponseBody;
-import com.backbase.dbs.messaging_service.api.service.v2.model.UpdateCustomerKycInfoRequestBody;
-import com.backbase.dbs.messaging_service.api.service.v2.model.UpdateCustomerKycInfoResponseBody;
+import com.backbase.dbs.poc.api.service.v2.CustomerKycInfoApi;
+import com.backbase.dbs.poc.api.service.v2.model.CustomerKycInfoGetResponseBody;
+import com.backbase.dbs.poc.api.service.v2.model.UpdateCustomerKycInfoRequestBody;
+import com.backbase.dbs.poc.api.service.v2.model.UpdateCustomerKycInfoResponseBody;
 import com.backbase.poc.service.GetCustomerInfoKYCService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,7 @@
 package com.backbase.poc.service;
 
 
-import com.backbase.dbs.messaging_service.api.service.v2.model.CustomerKycInfoGetResponseBody;
+import com.backbase.dbs.poc.api.service.v2.model.CustomerKycInfoGetResponseBody;
 
 public interface GetCustomerInfoKYCService {
 
